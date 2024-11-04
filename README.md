@@ -19,7 +19,7 @@ The SwiftAza Backend API is a RESTful service that provides endpoints for managi
    ```
 2. Navigate to the project directory:
    ```bash
-   cd backend
+   cd SwiftAza-org/backend
    ```
 3. Create a virtual environment:
    ```bash

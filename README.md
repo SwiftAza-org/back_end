@@ -2,7 +2,7 @@
 
 ## Overview
 
-The SwiftAza Backend API is a RESTful service that provides endpoints for managing and accessing data for the SwiftAza application. This backend is built using Node.js and Express, and it connects to a MongoDB database.
+The SwiftAza Backend API is a RESTful service that provides endpoints for managing and accessing data for the SwiftAza application. This backend is built using Python and Flask, and it connects to a MongoDB database.
 
 ## Features
 
@@ -21,9 +21,17 @@ The SwiftAza Backend API is a RESTful service that provides endpoints for managi
    ```bash
    cd backend
    ```
-3. Install the dependencies:
+3. Create a virtual environment:
    ```bash
-   npm install
+   python3 -m venv venv
+   ```
+4. Activate the virtual environment:
+   ```bash
+   source venv/bin/activate
+   ```
+5. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
    ```
 
 ## Configuration
@@ -31,17 +39,17 @@ The SwiftAza Backend API is a RESTful service that provides endpoints for managi
 Create a `.env` file in the root directory and add the following environment variables:
 
 ```
-PORT=3000
+PORT=5000
 MONGODB_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 ```
 
 ## Running the Application
 
-To start the server, run:
+To start the server make sure you're in backend directory, run:
 
-```bash
-npm start
+```
+python3 -m api.v1.app
 ```
 
 The server will start on the port specified in the `.env` file.
@@ -62,7 +70,7 @@ The server will start on the port specified in the `.env` file.
 
 ## Contributing
 
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details.
+We welcome from member of the organization for now
 
 ## License
 

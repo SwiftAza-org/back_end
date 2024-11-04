@@ -1,0 +1,15 @@
+.vscode
+
+__pycache__/
+**/__pycache__
+
+**/venv
+**/myvenv
+**/.env
+**/env
+.env
+env
+setup_mysql_database.sql
+
+api/migrations/
+api/v1_0_1/migrations/

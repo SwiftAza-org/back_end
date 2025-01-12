@@ -53,10 +53,10 @@ class DevelopmentConfig(Config):
     JWT_COOKIE_CSRF_PROTECT = False
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=1)
     SWAGGER = {
-        'title': 'SwiftAza API',
+        'title': 'Daily Contribution API',
         'uiversion': 3,
         'version': '1.0.1',
-        'description': 'API documentation for SwiftAza',
+        'description': 'API documentation for Daily Contribution',
         'termsOfService': '',
         'license': {
             'name': 'MIT',
@@ -80,10 +80,10 @@ class ProductionConfig(Config):
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(days=1)
     JWT_COOKIE_CSRF_PROTECT = True
     SWAGGER = {
-        'title': 'SwiftAza API',
+        'title': 'Daily Contribution API',
         'uiversion': 3,
         'version': '1.0.1',
-        'description': 'API documentation for SwiftAza',
+        'description': 'API documentation for Daily Contribution',
         'termsOfService': '',
         'license': {
             'name': 'MIT',

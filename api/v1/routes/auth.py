@@ -9,8 +9,7 @@ from datetime import datetime
 from bson.objectid import ObjectId
 
 from ..models import user_collection, db
-from ..views.permission import data_type
-from ..models.user import Manager, User, Seller, Buyer
+from ..models.user import User
 from ..views.util import to_dict
 import bcrypt
 from ..views.verify_accout import send_ver_code, cleanup_expired_codes, is_verification_code_valid

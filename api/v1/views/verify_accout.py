@@ -69,11 +69,11 @@ def send_ver_code(email):
       default_sender = current_app.config.get('MAIL_DEFAULT_SENDER', 'noreply@yourapp.com')
       veri_code = generate_verification_code(email)
       msg = Message(
-            subject='Welcome to SwiftAza. Copy your verificaton code',
+            subject='Welcome to Daily Contribution. Copy your verificaton code',
             sender=default_sender,
             recipients=[email],
             body=f"Hello {full_name},\n\n"
-            f"You have just created an account with SwiftAza.\n"
+            f"You have just created an account with Daily Contribution.\n"
             f"Here is your Verification code\n"
 
             f"VERIFICATION CODE: {veri_code}\n\n"

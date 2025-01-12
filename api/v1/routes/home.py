@@ -1,12 +1,11 @@
 from . import root_route
 from flask import jsonify, request
 from datetime import datetime
-from ..models.user import Manager, Buyer, Seller, User, Role, Permission
+from ..models.user import User
 from sqlalchemy.exc import IntegrityError
 from werkzeug.exceptions import BadRequest
 from flask_jwt_extended import jwt_required
 from ..models import db, deleted_user_collection, user_collection
-from ..views.permission import data_type as user_types
 
 
 @root_route.route('/', strict_slashes=False)

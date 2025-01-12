@@ -1,25 +1,25 @@
-# SwiftAza Backend API
+# Daily Contribution Backend API
 
 ## Overview
 
-The SwiftAza Backend API is a RESTful service that provides endpoints for managing and accessing data for the SwiftAza application. This backend is built using Python and Flask, and it connects to a MongoDB database.
+The Daily Contribution Backend API is a RESTful service that provides endpoints for managing and accessing data for the Daily Contribution application. This backend is built using Python and Flask, and it connects to a MongoDB database.
 
 ## Features
 
 - User authentication and authorization
 - CRUD operations for user profiles
-- Data management for SwiftAza application
+- Data management for Daily Contribution application
 - Secure API endpoints with JWT
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/SwiftAza-org/backend.git
+   git clone https://github.com/Daily Contribution-org/backend.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd SwiftAza-org/backend
+   cd Daily Contribution-org/backend
    ```
 3. Create a virtual environment:
    ```bash

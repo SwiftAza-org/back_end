@@ -1,1 +1,1 @@
-from .permission import permission_required
+

@@ -9,7 +9,7 @@ from .config import config
 from .database.mysql import db
 from .database.mongodb import init_mongodb, mongo  # noqa: F401
 
-from .routes import auth_route, root_route, manage_user_route, manager_route, buyer_route, seller_route, user_permission_route, wallet_route  # noqa: F401
+from .routes import auth_route, root_route, user_route# noqa: F401
 
 
 bcrypt = Bcrypt()
@@ -35,19 +35,14 @@ def create_app(config_name: str) -> Flask:
     # Register blueprints here
     app.register_blueprint(root_route)
     app.register_blueprint(auth_route)
-    app.register_blueprint(user_permission_route)
-    app.register_blueprint(manage_user_route)
-    app.register_blueprint(manager_route)
-    app.register_blueprint(buyer_route)
-    app.register_blueprint(seller_route)
-    app.register_blueprint(wallet_route)
+    app.register_blueprint(user_route)
 
     # from .main import main as main_blueprint
     # app.register_blueprint(main_blueprint)
 
     @app.route('/')
     def home():
-        return jsonify({"message": "Welcome to Swift Aza"})
+        return jsonify({"message": "Welcome to Daily Contribution API"})
 
     with app.app_context():
         db.create_all()
